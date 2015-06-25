@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>App</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+<link rel='stylesheet' href='app.css'/>
+
+</head>
+<body><h1 class='response'>Your Device Does Not Meet The Requirements For This Game.</h1>
+<div id='background'></div>
+<div id='page-wrap'>
+
+<h1 class='title'>Welcome young lad, can you guess which chest contains the gold?</br>
+Press the button when you're ready to shuffle the treasures.</h1>
+<div id='button'><h1 class='shuffle'>Shuffle</h1></div>
+
+<div class='arrow_box'></div>
+<section class='slide-up-boxes'>
+	
+	<a href='#' id='chest1'></a>
+	<a href='#' id='chest2'></a>
+	<a href='#' id='chest3'></a>
+</section>
+</div>
+<h1 id='hide'>Which One Is It?</h1>
+<div id="winner"><h1 id='win'><img src="http://www.thecoinspot.com/20dg/1907%20St.%20Gaudens%20$20%20Type%201,%20High%20Relief%20Obv.png"/>Congratulations!<img src="http://www.thecoinspot.com/20dg/1907%20St.%20Gaudens%20$20%20Type%201,%20High%20Relief%20Obv.png"/></h1></div>
+
+<button class="b1"><h3 class="t1">NO RETRY</h3></button><button class='b2'><h3 class='t2'>REPLAY</h3></button>
+
+<img src="http://salon-9elementsgmbh.netdna-ssl.com/system/files/531b37/a4342b828df1000060/giphy.gif" class='shark'/>
+
+
+
+<script>$(document).ready(function(){	var random=Math.floor(Math.random()*3)+1;	function chestOne(){$('#chest1')
+     .animate({left: 1200}, 1000)
+     .delay(300)
+     .animate({left: -200}, 1000)
+     .delay(300)
+     .animate({left: 1000}, 1000)
+	 .delay(300)
+	 .animate({top: 100,left:100}, 1000)
+	 .delay(300)
+	 .animate({left: 10, top: 400}, 1000)
+	 .delay(300)
+	 .animate({left: 600, top: 400}, 1000)
+	 
+	 ;		$('#chest2')
+     .animate({left: -100}, 1000)
+     .delay(300)
+     .animate({left: 100}, 1000)
+     .delay(300)
+     .animate({left: 10}, 1000)
+	 .delay(300)
+	 .animate({top: 300,left:-400}, 1000)
+	 .delay(300)
+	 .animate({left: 300, top: 400}, 1000)
+	 .delay(300)
+	 
+	 ;		$("#chest3")
+	 .animate({left: 200}, 1000)
+     .delay(300)
+     .animate({left: 1000}, 1000)
+     .delay(300)
+     .animate({left: 300}, 1000)
+	 .delay(300)
+	 .animate({left:900}, 1000)
+	 .delay(300)
+	 .animate({left: 10, top: 100}, 1000)
+	 .delay(500)
+	 .animate({left: 800, top: 400}, 1000)
+	 
+	 ;	}
+	 
+	 
+	 
+	 function chestTwo(){$('#chest1')
+     .animate({left: -200}, 1000)
+     .delay(300)
+     .animate({left: 900}, 1000)
+     .delay(300)
+     .animate({left: 10}, 1000)
+	 .delay(300)
+	 .animate({top: 100,left:900}, 1000)
+	 .delay(300)
+	 .animate({left: 10, top: 100}, 1000)
+	 .delay(300)
+	 .animate({left: 300, top: 400}, 1000)
+	 
+	 ;		$('#chest2')
+     .animate({left: 300}, 1000)
+     .delay(300)
+     .animate({left: 100}, 1000)
+     .delay(300)
+     .animate({left: 1000}, 1000)
+	 .delay(300)
+	 .animate({top: 300,left:-400}, 1000)
+	 .delay(300)
+	 .animate({left: 550, top: 400}, 1000)
+	 .delay(300)
+	 
+	 ;		$("#chest3")
+	 .animate({left: 500}, 1000)
+     .delay(300)
+     .animate({left: 1}, 1000)
+     .delay(300)
+     .animate({left: 900}, 1000)
+	 .delay(300)
+	 .animate({left:10}, 1000)
+	 .delay(300)
+	 .animate({left: 1000, top: 100}, 1000)
+	 .delay(500)
+	 .animate({left: 80, top: 400}, 1000)
+	 
+	 ;	}
+	 
+	 
+	 function chestThree(){$('#chest1')
+     .animate({left: -100}, 1000)
+     .delay(300)
+     .animate({left: 900}, 1000)
+     .delay(300)
+     .animate({left: -100}, 1000)
+	 .delay(300)
+	 .animate({top: 200,left:900}, 1000)
+	 .delay(300)
+	 .animate({left: 10, top: 10}, 1000)
+	 .delay(300)
+	 .animate({left: 800, top: 400}, 1000)
+	 
+	 ;		$('#chest2')
+     .animate({left: 300}, 1000)
+     .delay(300)
+     .animate({left: 1000}, 1000)
+     .delay(300)
+     .animate({left: -100}, 1000)
+	 .delay(300)
+	 .animate({top: 980,left:900}, 1000)
+	 .delay(300)
+	 .animate({left: 10, top: 400}, 1000)
+	 .delay(300)
+	 
+	 ;		$("#chest3")
+	 .animate({left: 900}, 1000)
+     .delay(300)
+     .animate({left: 10}, 1000)
+     .delay(300)
+     .animate({left: 800}, 1000)
+	 .delay(300)
+	 .animate({left:900}, 1000)
+	 .delay(300)
+	 .animate({left: 100, top: 100}, 1000)
+	 .delay(500)
+	 .animate({left: 300, top: 400}, 1000)
+	 
+	 ;	}
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+   
+
+$("#button").click(function(){
+
+	 
+	if(random===1){chestOne();}
+	else if(random===2){chestTwo();}
+	 else if(random===3){chestThree();}
+	 
+
+
+
+		
+
+    $("#button").css('opacity','0');$('.arrow_box').css('opacity','0');$('.title').css('opacity','0');
+	function shark(){$(".shark").delay(500).show();$(".shark").animate({'position': "absolute","left":"-400px"},500);}shark();
+	
+
+	function text(){$('#hide').delay(10000).fadeIn();}
+	text();
+	
+	
+
+$("#chest2").click(function () {
+            $("#winner").fadeIn();$("a").fadeOut();$(".b2").fadeIn();
+        });
+		$("#chest3").click(function(){
+		     $(".b1").fadeIn();$("a").fadeOut();
+			 });
+			 $("#chest1").click(function(){
+		     $(".b1").fadeIn();$("a").fadeOut();
+			 });
+			 
+			 $(".b1,.t1,.b2,.t2").click(function(){
+		    location.reload();
+			 });
+			 
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+  
+</script>
+
+
+
+</body></html>
+
